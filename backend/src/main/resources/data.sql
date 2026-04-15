@@ -1,0 +1,3 @@
+-- Initial seed data (runs only if tables are empty)
+-- Roles will be inserted by the application on startup via DataInitializer
+-- This file is intentionally minimal to allow JPA ddl-auto to create the schema first
