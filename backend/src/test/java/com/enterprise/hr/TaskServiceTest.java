@@ -92,7 +92,7 @@ class TaskServiceTest {
         request.setAssigneeId(employee.getId());
         request.setPriority(TaskPriority.HIGH);
 
-        TaskDto task = taskService.createTask(request, manager.getId());
+        TaskDto task = taskService.createTask(request);
 
         assertNotNull(task.getId());
         assertEquals("Test Task", task.getTitle());
@@ -107,7 +107,7 @@ class TaskServiceTest {
         request.setDescription("Test");
         request.setAssigneeId(employee.getId());
         request.setPriority(TaskPriority.MEDIUM);
-        taskService.createTask(request, manager.getId());
+        taskService.createTask(request);
 
         KanbanBoardDto board = taskService.getKanbanBoard(manager.getId());
 
@@ -137,7 +137,7 @@ class TaskServiceTest {
         request.setTitle("My Task");
         request.setDescription("Test");
         request.setAssigneeId(employee.getId());
-        taskService.createTask(request, manager.getId());
+        taskService.createTask(request);
 
         List<TaskDto> myTasks = taskService.getMyTasks(employee.getId());
 
@@ -150,7 +150,7 @@ class TaskServiceTest {
         request.setTitle("Assigned Task");
         request.setDescription("Test");
         request.setAssigneeId(employee.getId());
-        taskService.createTask(request, manager.getId());
+        taskService.createTask(request);
 
         List<TaskDto> assignedTasks = taskService.getAssignedTasks(manager.getId());
 
