@@ -1,0 +1,36 @@
+{
+  "answers": [
+    {
+      "header": "角色设置",
+      "items": [
+        {
+          "letter": "A",
+          "label": "7级角色",
+          "description": "CEO、CTO、技术总监、部门经理、组长、普通员工、实习生"
+        }
+      ]
+    },
+    {
+      "header": "任务看板",
+      "items": [
+        {
+          "letter": "A",
+          "label": "4列(Recommended)",
+          "description": "待处理、进行中、待验收、已完成"
+        }
+      ]
+    },
+    {
+      "header": "预设账号",
+      "items": [
+        {
+          "letter": "A",
+          "label": "是(Recommended)",
+          "description": "预设 CEO 账号，初始密码 admin123"
+        }
+      ]
+    }
+  ],
+  "raw": "角色设置: 7级角色\n任务看板: 4列(Recommended)\n预设账号: 是(Recommended)",
+  "ts": 1776291988464
+}
