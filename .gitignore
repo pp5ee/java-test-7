@@ -1,1 +1,8 @@
 .humanize*
+frontend/dist/
+frontend/node_modules/
+*.lock
+docker-compose.yml
+backend/Dockerfile
+frontend/Dockerfile
+frontend/src/utils/
